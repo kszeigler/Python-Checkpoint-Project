@@ -1,0 +1,681 @@
+def main():
+  you = 4
+  key = 0
+  glory = 0
+  riches = 0
+  weapon = 0
+
+  print("Oh no! It looks like you woke up in the Labirynth!")
+  print("It's weird because you're pretty sure you went to sleep in you're comfy bed at how.") 
+  print("How odd!")
+  print(" ")
+  print("No worries! You read through the PJO books as a kid and know what to do!")
+  print("At least that's what you tell yourself to feel better.")
+  print("First thing's first! Survey the area. You look around and you see...")
+  print("You see identical tunnel entrances.") 
+  print("One going left, one going right, and one decending in the center.")
+  
+  print("Which tunnel do you enter?: ")
+  
+  print("  1) Left")
+  print("  2) Center")
+  print("  3) Right")
+  
+  q1 = int(input("Which tunnel do you enter?: "))
+  
+  if q1 == 1:
+    weapon +=1
+    print("Left is always the best way to go in a Labryinth right?")
+    print("You travel left determined to find a way out. But what you find is...")
+    print("A sword!")
+    print("You pick up the sword and admire how sharp and polished it is.")
+    print("The sword hummed with power")
+    print(" ")
+    print("You slash it through the air a couple of times and it feels light")
+    print("It had a fluidity to it as you tested swung it around.")
+    print("You stab the air a few times and start to feel confident about your chances.")
+    print("However, something about it seems a little abnormal. You're not sure why.")
+    print("You don't fully trust the sword but you take it with you anyway.")
+  
+  elif q1 == 2:
+    weapon +=2
+    print("Straight as an arrow!")
+    print("In fact, that's exactly what you find!")
+    print("You descend into the tunnel and find a sturdy bow and a single arrow.")
+    print("You're a little confused as to why it's only one arrow.")
+    print("You're also a little concerned about your shooting abilities.")
+    print("You notched the bow and shot the arrow to the best of your ability.")
+    print("With a 'thunk' the arrow stuck into the wall.")
+    print(" ")
+    print("For a moment nothing happens. But something whispers in the back of your mind.")
+    print("Hold out your palm.")
+    print("You hold out your open palm, not sure what to expect.")
+    print("The arrow comes to life, shifting back and forth in the wall.")
+    print("Then in one swift move it dislodges itself and safly returns to your palm.")
+    print("A self-retrieving arrow! However, you can't shake the feeling this arrow is off.")
+    print("You continue forward with the arrow anyway, not fully trusting it.")
+  
+  else:
+    weapon +=3
+    print("Right is probably the right way to go! Right?")
+    print("You head to the right and come across a long spear.")
+    print("The spear was long and razer sharp.")
+    print("You pick up the spear and are a little surprised by the weight.")
+    print("It seemed heavy and metallic, but there was a lightness to it.")
+    print("You hold it with two hands and stab forward a few times.")
+    print(" ")
+    print("Since the tunnel is pretty large you take liberty of the space.")
+    print("You swing the spear around wildly. Enjoying the speed and the 'whoosing' noises.")
+    print("You smile weighing out the odds of success of escape in your head.")
+    print("However, something about the spear seems unusual...")
+    print("You continue forward with the spear anyway, not fully trusting it.")
+  
+  print(" ")
+  print("You continue forward, a littl more confident about your chances.")
+  print("As you walk, you start hearing what sounds like hissing.")
+  print("You walk into an open space with pillars spread around at random.")
+  print("In the center of the room there is a gorgon!")
+  print("Not thee gorgon that turns you into stone if you look at her face.")
+  print("But a snake-lady nonetheless.")
+  print(" ")
+  print("Okay. This is the real deal. You have to make a decision on what to do.")
+  print("Unfortunately, you're a mortal with a regularly working nervous system.")
+  print("You go into 'Fight' or 'Flight' mode. You have to make a quick decision!")
+  print("You know yourself best in sudden stressful situations. Do you...")
+  
+  print("Choose Fight or Flight? ")
+  
+  print("  1) Fight")
+  print("  2) Flight")
+  
+  q2 = int(input("Choose Fight or Flight? "))
+  
+  if q2 == 1:
+    print("Fight of course! I'm not carrying a weapon for nothing!")
+  
+  else: 
+    print("Maybe I don't have to fight? I'll try to sneak around...")
+  
+  import random
+  
+  q2 = random.randint(0, 1)
+  
+  if q2 > 0.5:
+    glory +=3
+    print(" ")
+    print("A success! Who would've thought you were so talented!")
+    print("The way you charged in and just slashed randomly in the air.")
+    print("It almost looked like you knew what you were doing!")
+  
+  else:
+    you -=2
+    print(" ")
+    print("Oh damn. You really almost had it! Maybe. You're new at this, so 'A' for effort!")
+    print("The gorgan still attacked you.")
+    print("Seeing how weak you were, it tossed your body to the side like a ragdoll.")
+  
+  print("Look now you're on the other side. You continue forward down the tunnel.")
+  print("You were just beginning to think the tunnel went on forever, until you found another space.")
+  print("This space had a small elegant table around waist height.")
+  print(" ")
+  print("On the table there is a vial of nectar.")
+  print("It also has a little label that reads: 'Just a small amount to get you through and maybe more too'.")
+  print("How, fortuitous! It seems like a health potion.")
+  print(" ")
+  print("You flip the label over and see it says something else.")
+  print("'But just a little, for your woes, lest you burn up!'")
+  print("Oh no! There's a caveat!")
+  print(" ")
+  print("Since you're super smart you figure out that the health potion works fine if you're damaged.")
+  print("It will also work to give you extra health if you take a little more.")
+  print("However if you take too much you'll burn up and perish!")
+  print("And you don't get to know what is too much, especially since you're most definitely")
+  print("(most-likely) going to be fighting again.")
+  print(" ")
+  print("Also for magical reasons you have to choose to drink the potion now.")
+  print("Sucks to be in a magical world with rules!")
+  
+  print(" ")
+  
+  print("Do you drink from the vial? ")
+  
+  print("  1) Drink")
+  print("  2) Leave it")
+  
+  q3 = int(input("Do you drink from the vial? "))
+  
+  if q3 == 1:
+    you +=1
+    print(" ")
+    print("You drink it. It tastes like heaven if heaven could be a flavor.")
+    print("Then the flavor disappears and you no longer remember it.")
+  
+  else:
+    print(" ")
+    print("You don't want to chance it. Things are already risky as is.")
+    print("You decide not to drink it and move on down the tunnel.")
+  
+  print(" ")
+  print("Down the tunnel you go!")
+  print("As you go down the tunnel you come across another space.")
+  print("You peer into the space and see...")
+  
+  # make adjustments here (and with variables at the top)  
+    
+  import random
+  
+  num = random.randint(0, 14)
+  
+  if num < 7:
+    print(" ")
+    print("Another vial!")
+  
+    if num < 7:
+      print(" ")
+      print("Will you drink from the vial? ")
+      print("  1) Drink")
+      print("  2) Leave it")
+  
+      q4 = int(input("Will you drink from the vial? "))
+    
+      if q4 == 1:
+        you +=1
+        print(" ")
+        print("You drink it.")
+        print("The flavor is amazing and also extremely familiar. Then it disappears.")
+      else:
+        you +=0
+        print(" ")
+        print("You left it.") 
+  
+  elif num > 7:
+    print(" ")
+    print("Another monster!")
+    
+    if num > 7:
+      print(" ")
+      print("Will you fight it? ")
+      print("  1) Fight")
+      print("  2) Leave it")
+  
+    q5 = int(input("Will you fight it? "))
+    
+    if q5 == 1 and num <= 10:
+      you -=2
+      print(" ")
+      print("You lost the fight.")
+    elif q5 == 1 and num >= 11:
+      glory +=3
+      print(" ")
+      print("You slay the monster!")
+    elif q5 == 2 and num <= 10:
+      you -=2
+      print(" ")
+      print("You failed to hide")
+    else:
+      print(" ")
+      print("You snuck away successfully!")  
+  
+  else:
+    riches +=10
+    print(" ")
+    print("It's a small bag of gold coins!")
+    print("A rare occurance but fortune seems to be on your side!")
+    
+  print(" ")
+  print("What are the odds!")
+  print(" ")
+  print("There are so many random occurrences that can occur.")
+  print("Hopefully, things stay in your favor as you move forward.")
+  print(" ")
+  print("Now on to the next. You continue down the tunnel and come across...")
+  
+  import random
+  
+  num = random.randint(0, 24)
+  
+  if num < 12:
+    print(" ")
+    print("Another vial!")
+    print("I wonder how they keep appearing so much.")
+  
+    if num < 12:
+      print(" ")
+      print("Will you drink from the vial? ")
+      print("  1) Drink")
+      print("  2) Leave it")
+  
+      q6 = int(input("Will you drink from the vial? "))
+    
+      if q6 == 1:
+        you +=1
+        print(" ")
+        print("You drink the nectar. It tastes amazing again. And disappears just as fast.")
+  
+        if you >= 6
+          print(" ")
+          print("You start to feel really hot.")
+          print("You start panting and steaming as your body fluids are quickly heated.")
+          print("You erupt into flames! You drank too much nectar. Oops...")
+          print("Game Over")
+  
+        else:
+          print(" ")
+    
+      else:
+        you +=0
+        print(" ")
+        print("You left it.") 
+  
+  elif num > 12:
+    print(" ")
+    print("Another monster!")
+    
+    if num > 12:
+      print(" ")
+      print("Will you fight it? ")
+      print("  1) Fight")
+      print("  2) Leave it")
+  
+    q7 = int(input("Will you fight it? "))
+    
+    if q7 == 1 and num <= 18:
+      you -=2
+      print(" ")
+      print("You lost the fight.")
+      if you <= 0:
+        print("You've taken too much damage")
+        print("You lay there and bleed out")
+        print("Game Over")
+        print("Would you like to restart? ")
+        
+        restart = input("Would you like to restart? ")
+        if restart == yes:
+          main()
+        else: 
+          exit()
+      else:
+        print(" ")
+    
+    elif q7 == 1 and num >= 19:
+      glory +=3
+      print(" ")
+      print("You slay the monster!")
+    elif q7 == 2 and num <= 18:
+      you -=2
+      print(" ")
+      print("You failed to hide")
+      if you <= 0:
+        print("You've taken too much damage")
+        print("You lay there and bleed out")
+        print("Game Over")
+        print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+        if restart == yes:
+          main()
+        else: 
+          exit()
+      else:
+        print(" ")
+    else:
+      print(" ")
+      print("You snuck away successfully!")  
+  
+  else:
+    riches +=10
+    print(" ")
+    print("Another small bag of gold coins!")
+    print("Fortune is literally in your favor. You're not pulling any tricks are you?")
+  
+
+  print("You've made a lot of progress!"
+  print("In fact, you think you smell fresh air the closer you get to the end of the tunnel.")
+  print("At the end of the tunnel you see an opening.")
+  print(" ")
+  print("You walk cautiously to the opening, weapon at the ready.")
+  print("You peer into the room. In the center of the room is a gigantic dragon.")
+  print("It looks like the dragon is guarding the key.")
+  print("You really can't catch a break, huh?")
+  print(" ")
+  print("The dragon notices you. It watches you in wait. Waiting for you to make the first move.")
+  print("You have to decide on what to do.")
+  print(" ")
+
+  print("Do you choose to fight the dragon?")
+  print("Do you choose to distract the dragon?")
+  
+  print("What will you do?")
+
+  print(" 1) Fight")
+  print(" 2) Distract")
+  print(" ")
+
+  import random
+  
+  num = random.randint(1, 5)
+
+  answer = int(input("What will you do?"))
+  if answer == 1 and num > 3 and weapon >= 1:
+    glory +=4
+    print("You charge forward with reckless abandon!")
+    if weapon == 1:
+      print("You slash down with your sword. The dragon roars in pain!")
+    elif weapon == 2:
+      print("You pull back your arrow with all your might. You let out a slow breath and the arrow flies.")
+      print("With a sickening thud it pierces the dragon right in the eye!")
+    else:
+      print("You aim your spearhead at the dragon and charge forward at full speed. You stab it right in the side!")
+  elif answer == 1 and num < 3 and weapon >= 1:
+      you -=1
+      print("You charge forward with reckless abandon!")
+      if weapon == 1:
+        print("You slash down with your sword. But your sword betrays you!")
+        print("You knew your sword seemed off. It swings to the side on its own. Missing it's mark.")
+      elif weapon == 2:
+        print("You pull back your arrow with all your might. You let out a slow breath and release the arrow.")
+        print("But your arrow betrays you! You knew it seemed off. It quickly arches down into the ground.")
+      else:
+        print("You aim your spearhead at the dragon and charge forward at full speed. But your spear betrays you!")
+        print("You knew your spear seemed off. The spearhead aims straight to the ground against your efforts and falls short of its mark.")
+
+      print(" ")
+      print("The dragon isn't on guard for no reason. Your attempt at an attack fails.")
+      print("The dragon dodges your attack and swipes its tail and damages you.")
+    
+      if you <= 0:
+        print("You've taken too much damage")
+        print("You lay there and bleed out")
+        print(" ")
+        print("Game Over")
+        print(" ")
+        print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+        if restart == yes:
+          main()
+        else: 
+          exit()
+
+    elif answer == 2 and num > 3:
+      print("You decide that it might be worth distracting the dragon.")
+        if riches >= 10:
+          riches -=10
+          print("Good thing you pick up some money on the way here! You throw 10 coins.")
+          print("The distraction works! The dragon darts after the coins.")
+          print("However it's not long until the dragon has it's attention back on you.")
+        else:
+          print("You pick up a rock by your shoe and throw it to the side.")
+          print("The dragon looks toward where it lands. Curious. But turns it's attention back to you.")
+
+    else:
+      print("You tried to distract the dragon. But it didn't work.")
+      if riches >= 10:
+        you -=1
+        riches -=10
+        print("The dragon didn't seem to care about the shiny coins you threw to the side.")
+      elif riches == 0:
+        you -=1
+        print("You picked up a rock that was near your foot and tossed it to the side.")
+        print("The dragon didn't seem to care. It's eyes fixed on to you.")
+
+        if you <= 0:
+          print("You've taken too much damage")
+          print("You lay there and bleed out")
+          print(" ")
+          print("Game Over")
+          print(" ")
+          print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+          if restart == yes:
+            main()
+          else: 
+            exit()
+      else:
+        print("Hopefully your next attempt will have a better outcome.")
+
+  print(" ")
+  print("Now you made a little bit of progress. The next choice you make will be for the key.")
+  print("You need to decide if you are got to fight the dragon and make a run for the key.")
+  print("Or distract the dragon and make a run for the key.")
+
+  print("What will you do? ")
+
+  print(" 1) Fight")
+  print(" 2) Distract")
+  print(" ")
+
+  import random
+  
+  num = random.randint(1, 5)
+
+  answer = int(input("What will you do? "))
+  if answer == 1 and num > 3 and weapon >= 1:
+    key +=1
+    glory +=4
+    print("You charge forward with determination!")
+    if weapon == 1:
+      print("You slash across the dragon's flank with your sword. The dragon roars in pain!")
+      print("While the dragon is slowed with pain you run over and grab the key. Then sprint to the door the reads exit.")
+    elif weapon == 2:
+      print("You hold out your palm and the arrow flies back into your hand. You draw and release the arrow at full force!")
+      print("With a sickening thud it pierces the dragon right in the throat!")
+      print("While the dragon is slowed with pain you run over and grab the key. Then sprint to the door the reads exit.")
+    else:
+      print("You aim your spearhead at the dragon and charge forward at full speed. You stab it right in the armpit!")
+      print("While the dragon is slowed with pain you run over and grab the key. Then sprint to the door the reads exit.")
+  elif answer == 1 and num < 3 and weapon >= 1:
+      you -=1
+      print("You charge forward with reckless abandon!")
+      if weapon == 1:
+        print("You slash across with your sword. But your sword betrays you!")
+        print("Your sword is uncooperative. It swings to the side on its own. Missing it's mark.")
+      elif weapon == 2:
+        print("You hold out your palm and the arrow flies back into your hand. You draw and release the arrow at full force!")
+        print("Your arrow doesn't cooperate! It off-shoots and harmlessly bounces against the wall.")
+      else:
+        print("You aim your spearhead at the dragon and charge forward at full speed. But your spear betrays you!")
+        print("The spear doens't cooperate. The spearhead whooshes to the left, spinning you on your heel with the force.")
+
+      print(" ")
+      print("The dragon is now agitated by your failed attempts.")
+      print("The dragon slashes your chest with its razoer sharp claws.")
+    
+      if you <= 0:
+        print("You've taken too much damage")
+        print("You lay there and bleed out")
+        print(" ")
+        print("Game Over")
+        print(" ")
+        print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+        if restart == yes:
+          main()
+        else: 
+          exit()
+
+    elif answer == 2 and num > 3:
+      print("You decide that it might be worth distracting the dragon.")
+        if riches >= 10:
+          key +=1
+          riches -=10
+          print("Good thing you pick up some money on the way here! You throw 10 coins.")
+          print("The distraction works! The dragon darts after the coins.")
+          print("In that time you run over and grab the key. Then sprint to the door that says exit.")
+        else:
+          key +=1
+          print("You pick up a rock by your shoe and throw it to the side.")
+          print("The dragon looks toward where it lands. Curious. It walks over to the rock.")
+          print("In that time you run over and grab the key. Then sprint to the door that says exit.")
+
+      else:
+        print("You tried to distract the dragon. But it didn't work.")
+        if riches >= 10:
+          you -=1
+          riches -=10
+          print("The dragon didn't seem to care about the shiny coins you threw to the side.")
+        elif riches == 0:
+          you -=1
+          print("You pick up a rock that was near your foot and tossed it to the side.")
+          print("The dragon slashes your chest with its razoer sharp claws.")
+  
+        if you <= 0:
+          print("You've taken too much damage")
+          print("You lay there and bleed out")
+          print(" ")
+          print("Game Over")
+          print(" ")
+          print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+          if restart == yes:
+            main()
+          else: 
+            exit()
+      else:
+        print("Hopefully your next attempt will have a better outcome.")
+
+  print(" ")
+  print("You finally got the key! Unfortunately, the dragon is angry and charging you.")
+  print(" ")
+  print("You have to make a final decision.")
+  print(" ")
+  print("Fight the dragon or distract the dragon.")
+
+  print("What will you do?")
+
+  print(" 1) Fight")
+  print(" 2) Distract")
+  print(" ")
+
+  import random
+  
+  num = random.randint(1, 5)
+
+  answer = int(input("What will you do?"))
+    
+  if answer == 1 and num > 3 and weapon >= 1:
+    glory +=4
+    print("You charge forward with a finally desperate scream!")
+    if weapon == 1:
+      print("You lunge forward and slide under the charging dragon. With all your might you stab it right in the belly!")
+      print("While the dragon is slowed with pain you sprint to the door and unlock it.")
+    elif weapon == 2:
+      print("You hold out your palm and the arrow flies back into your hand. You draw and release. The arrow and it flies true!")
+      print("With a sickening thud it pierces the dragon right in the nose!")
+      print("While the dragon is slowed with pain you sprint to the door and unlock it.")
+    else:
+      print("You run forward and do a cool spin (I promise it was cool) and slash the dragon's eyes! The dragon roars in pain!")
+      print("While the dragon is slowed with pain you sprint to the door and unlock it.")
+  elif answer == 1 and num < 3 and weapon >= 1:
+      you -=6
+      print("You charge forward with a finally desperate scream!")
+      if weapon == 1:
+        print("You lunge forward and slide under the charging dragon.  But your sword betrays you!")
+        print("Your sword has failed you. The dragon crushes you under it's weight.")
+      elif weapon == 2:
+        print("You hold out your palm and the arrow flies back into your hand. You draw and release.")
+        print("Your arrow fails you! The dragon charges forward. It's wide open maw snaps you up in an instant.")
+      else:
+        print("You run forward and try to do a cool spin. The spin wasn't cool enough!")
+        print("The spear fails you. You twist your ankle and fall right into the dragon's open mouth.")
+
+      print(" ")
+    
+      if you <= 0:
+        print("You've taken too much damage")
+        print(" ")
+        print("Game Over")
+        print(" ")
+        print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+        if restart == yes:
+          main()
+        else: 
+          exit()
+
+    elif answer == 2 and num > 3:
+      print("You decide that it might be worth distracting the dragon.")
+        if riches >= 10:
+          riches -=10
+          print("Good thing you pick up some money on the way here! You throw 10 coins.")
+          print("The distraction works! The dragon darts after the coins.")
+          print("You use the key to open the door.")
+        else:
+          print("You pick up a rock by your shoe and throw it to the side.")
+          print("The dragon looks toward where it lands. Curious. It walks over to the rock.")
+          print("You use the key to open the door.")
+
+      else:
+        print("You tried to distract the dragon. But it didn't work.")
+        if riches >= 10:
+          you -=6
+          riches -=10
+          print("The dragon didn't seem to care about the shiny coins you threw to the side.")
+          print("The dragon draws a deep breath and shoots out a great pillar of fire. Roast alive.")
+        elif riches == 0:
+          you -=6
+          print("You pick up a rock that is near your foot and tossed it to the side.")
+          print("The dragon draws a deep breath and shoots out a great pillar of fire. Roast alive.")
+  
+        if you <= 0:
+          print("You've taken too much damage")
+          print("You lay there and bleed out")
+          print(" ")
+          print("Game Over")
+          print(" ")
+          print("Would you like to restart? ")
+    
+        restart = input("Would you like to restart? ")
+          if restart == yes:
+            main()
+          else: 
+            exit()
+      else:
+        print("Success! You use the key and exit the Labirynth!")
+        print("You're filled with adrenaline and joy.")
+        print(" ")
+        print("You breathe in the fresh air and bask in the sunlight.")
+        print("You take the time to recover from your journey.")
+        print(" ")
+        print("You make note that you are now in the middle of a large forest.")
+        print("Something to worry about later!")
+
+  print(" ")
+  print("Your health remaining: ", you)
+  print("Your glory earned: ", glory)
+  print("Your riches earned: ", riches)
+  print(" ")
+
+  
+  print("You made it to the end!")
+  print(" ")
+  print("Thank you so much for playing!")
+  print(" ")
+  print("Would you like to restart? ")
+  print(" ")
+    
+  restart = input("Would you like to restart? ")
+      if restart == yes:
+        main()
+      else: 
+        exit()
+  
+main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
